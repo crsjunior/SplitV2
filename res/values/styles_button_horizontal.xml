@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- Estilo de um botao que se estende horizontalmente, ocupando toda a largura disponivel na tela -->
+
+
+	<!-- botao -->
+	<style name="button_horizontal">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:orientation">horizontal</item>
+		<!-- <item name="android:background">@drawable/button_horizontal</item> -->
+		<item name="android:layout_gravity">center</item>
+		<item name="android:gravity">center</item>
+	</style>
+
+	<!-- icone para o botao -->
+	<style name="button_horizontal_imageview">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:adjustViewBounds">true</item>
+		<item name="android:scaleType">fitCenter</item>
+		<item name="android:layout_marginRight">15dp</item>
+	</style>
+
+	<!-- texto para o botao -->
+	<style name="button_horizontal_textview">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+		<item name="android:textColor">#A0000000</item>
+	</style>
+
+</resources>

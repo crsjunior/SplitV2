@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+
+	<include
+		android:id="@+id/layout_titulo"
+		layout="@layout/layout_cabecalho_split" />
+
+	<!-- layout do conteudo -->
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="10dp"
+		android:layout_below="@+id/layout_titulo" >
+
+		<TextView
+			android:id="@+id/textview_bem_vindo"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="@string/textview_bem_vindo" />
+		<!-- botao criar evento -->
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginTop="40dp"
+			android:layout_below="@+id/textview_bem_vindo" >
+
+			<LinearLayout
+				android:id="@+id/button_criar_evento"
+				style="@style/button_quadrado" >
+
+				<ImageView
+					style="@style/button_quadrado_imageview"
+					android:src="@drawable/novo_evento" />
+
+				<TextView
+					style="@style/button_quadrado_textview"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:text="@string/act_criar_novo_evento_button_criar_evento" />
+			</LinearLayout>
+		</LinearLayout>
+	</RelativeLayout>
+
+</RelativeLayout>

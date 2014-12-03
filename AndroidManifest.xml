@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="br.com.split"
+	android:versionCode="3"
+	android:versionName="1.1" >
+
+	<uses-sdk
+		android:minSdkVersion="16"
+		android:targetSdkVersion="19" />
+
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+	<application
+		android:name=".controller.SplitApplication"
+		android:allowBackup="true"
+		android:icon="@drawable/ic_launcher"
+		android:label="@string/app_name"
+		android:theme="@style/SplitActionBarTheme" >
+		<activity
+			android:name=".activities.MainSplitActivity"
+			android:label="@string/title_activity_main"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activities.CriarNovoEventoActivity"
+			android:label="@string/title_activity_criar_novo_evento"
+			android:parentActivityName=".activities.InicializarActivity"
+			android:screenOrientation="portrait" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="br.com.split.activities.InicializarActivity" />
+		</activity>
+		<activity
+			android:name=".activities.EventoActivity"
+			android:label="@string/title_activity_evento"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activities.CadastrarPessoaActivity"
+			android:label="@string/title_activity_cadastrar_pessoa"
+			android:parentActivityName=".activities.EventoActivity"
+			android:screenOrientation="portrait" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="br.com.split.activities.EventoActivity" />
+		</activity>
+		<activity
+			android:name=".activities.CadastrarProdutoActivity"
+			android:label="@string/title_activity_cadastrar_produto"
+			android:parentActivityName=".activities.EventoActivity"
+			android:screenOrientation="portrait" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="br.com.split.activities.EventoActivity" />
+		</activity>
+		<activity
+			android:name=".activities.VincularProdutoPessoasActivity"
+			android:label="@string/title_activity_vindular_produto_pessoas"
+			android:parentActivityName=".activities.CadastrarProdutoActivity"
+			android:screenOrientation="portrait" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="br.com.split.activities.CadastrarProdutoActivity" />
+		</activity>
+		<activity
+			android:name=".activities.VerContaActivity"
+			android:label="@string/title_activity_ver_conta"
+			android:parentActivityName=".activities.EventoActivity"
+			android:screenOrientation="portrait" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="br.com.split.activities.EventoActivity" />
+		</activity>
+		<activity
+			android:name=".activities.VerContaPessoaActivity"
+			android:label="@string/title_activity_ver_conta_pessoa"
+			android:parentActivityName=".activities.VerContaActivity"
+			android:screenOrientation="portrait" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="br.com.split.activities.VerContaActivity" />
+		</activity>
+		<activity
+			android:name=".activities.VerContaPessoaProdutoActivity"
+			android:label="@string/title_activity_ver_conta_pessoa_produto"
+			android:parentActivityName=".activities.VerContaPessoaActivity"
+			android:screenOrientation="portrait" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="br.com.split.activities.VerContaPessoaActivity" />
+		</activity>
+		<activity
+			android:name=".activities.FacebookEscolherLocalActivity"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activities.FacebookEscolherLocal"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activities.FacebookLoginActivity"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activities.FriendPickerActivity"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activities.FacebookFriendPickerActivity"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activities.PickFriendsActivity"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activities.ContaSimplesActivity"
+			android:screenOrientation="portrait" >
+		</activity>
+
+		<!-- <activity -->
+		<!-- android:name=".activities.TipoEntradaActivity" -->
+		<!-- android:screenOrientation="portrait" > -->
+		<!-- <intent-filter> -->
+		<!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+		<!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+		<!-- </intent-filter> -->
+		<!-- </activity> -->
+
+		<meta-data
+			android:name="com.facebook.sdk.ApplicationId"
+			android:value="@string/app_id" />
+
+		<activity android:name="com.facebook.LoginActivity" >
+		</activity>
+		<activity
+			android:name=".activities.VerPessoasActivity"
+			android:label="@string/title_activity_ver_pessoas"
+			android:parentActivityName=".activities.EventoActivity"
+			android:screenOrientation="portrait" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="br.com.split.activities.EventoActivity" />
+		</activity>
+		<activity
+			android:name=".activities.VerProdutosActivity"
+			android:label="@string/title_activity_ver_produtos"
+			android:parentActivityName=".activities.EventoActivity"
+			android:screenOrientation="portrait" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="br.com.split.activities.EventoActivity" />
+		</activity>
+		<activity
+			android:name=".activities.InicializarActivity"
+			android:label="@string/title_activity_splash"
+			android:screenOrientation="portrait" >
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".RecadastrarProdutoActivity"
+			android:label="@string/title_activity_recadastrar_produto" >
+		</activity>
+		<activity
+			android:name="br.com.split.activities.VerProdutos2Activity"
+			android:label="@string/title_activity_ver_produtos2"
+			android:parentActivityName=".activities.EventoActivity" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="br.com.split.activities.EventoActivity" />
+		</activity>
+	</application>
+
+</manifest>

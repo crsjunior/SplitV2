@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- palette: flow_the_coral_reef_7 -->
+	<color name="coral_reef_amethysis_light">#FFDF5BFF</color>
+	<color name="coral_reef_saros">#FFF36756</color>
+	<color name="coral_reef_spiked_lemonade">#FFE2E822</color>
+	<color name="coral_reef_sea_aqua_blue">#FF5CEAFF</color>
+	<color name="coral_reef_amethysis_dark">#FFA535D9</color>
+
+	<!-- palette: hipster -->
+	<color name="hipster_vetro">#9DD4CC</color>
+	<color name="hipster_bee">#FDDB8B</color>
+	<color name="hipster_harder">#F29779</color>
+	<color name="hipster_oceans_light">#6E7788</color>
+	<color name="hipster_oceans_dark">#364758</color>
+
+	<!-- palette: e -->
+	<color name="e_azul_claro">#14F4FE</color>
+	<color name="e_azul_escuro">#3F728A</color>
+	<color name="e_verde_claro">#79F698</color>
+	<color name="e_verde_medio">#65C869</color>
+	<color name="e_verde_escuro">#4E9A1D</color>
+
+	<!-- palette: mineral_blues -->
+	<color name="mineral_blues_azul_escuro_leve">#06ACBF</color>
+	<color name="mineral_blues_azul_escuro_forte">#677D96</color>
+	<color name="mineral_blues_azul_claro_leve">#D0E7F0</color>
+	<color name="mineral_blues_azul_claro_forte">#B1D7EB</color>
+
+	<!-- palette: nevada_opal_30 -->
+	<color name="nevada_opal_30_corazon_del_caribe">#459CB8</color>
+	<color name="nevada_opal_30_mad_hatter">#31A92E</color>
+	<color name="nevada_opal_30_hot_red">#D71A18</color>
+	<color name="nevada_opal_30_cold_blood">#6C0013</color>
+	<color name="nevada_opal_30_cavity">#3F0000</color>
+	<color name="nevada_opal_30_mad_hatter_claro">#71E96E</color>
+	<color name="nevada_opal_30_mad_hatter_escuro">#006900</color>
+	<color name="nevada_opal_30_hot_red_claro">#FF5A58</color>
+	<color name="nevada_opal_30_hot_red_escuro">#970000</color>
+	<color name="nevada_opal_30_mad_hatter_claro_super">#B1FFAE</color>
+	<color name="nevada_opal_30_hot_red_claro_super">#FF9A98</color>
+
+	<!-- minhas cores -->
+	<color name="normal_verde">#F48577</color>
+	<color name="selected_vermelho">#79F698</color>
+
+</resources>

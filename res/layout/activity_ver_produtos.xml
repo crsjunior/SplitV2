@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="br.com.split.activities.VerProdutosActivity" >
+
+	<include
+		android:id="@+id/layout_titulo"
+		layout="@layout/layout_cabecalho_split" />
+
+	<include
+		android:id="@+id/layout_linha_descricao"
+		layout="@layout/layout_linha_descricao"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="-5dp"
+		android:layout_below="@+id/layout_titulo" />
+
+	<!-- informacoes sobre ao produtos -->
+
+	<RelativeLayout
+		android:id="@+id/layout_info"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingTop="10dp"
+		android:paddingBottom="10dp"
+		android:paddingLeft="6dp"
+		android:paddingRight="6dp"
+		android:layout_below="@+id/layout_linha_descricao"
+		android:background="#F7F8A7" >
+
+		<!-- botao para voltar, contendo a quantidade de produtos no evento -->
+
+		<LinearLayout
+			android:id="@+id/button_total_produtos"
+			android:layout_width="fill_parent"
+			android:layout_height="40dp"
+			android:orientation="horizontal"
+			android:background="@drawable/button_normal_vermelho"
+			android:onClick="onButtonClick" >
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:src="@drawable/seta_esquerda_4" />
+
+			<TextView
+				android:id="@+id/textview_total_produtos_numero"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingRight="5dp"
+				android:layout_gravity="center_vertical"
+				android:textSize="14sp"
+				android:textStyle="bold"
+				android:textColor="#a0000000" />
+
+			<TextView
+				android:id="@+id/textview_total_produtos_texto"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:textSize="12sp"
+				android:textStyle="bold"
+				android:singleLine="true"
+				android:ellipsize="end"
+				android:textColor="#a0000000" />
+		</LinearLayout>
+	</RelativeLayout>
+
+	<!-- linha separadora horizontal -->
+
+	<View
+		android:id="@+id/view_linha_separadora"
+		android:layout_width="fill_parent"
+		android:layout_height="1dp"
+		android:layout_below="@+id/layout_info"
+		android:background="#CAAF6F" />
+
+	<!-- lista de produtos consumidos no evento -->
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:layout_below="@+id/view_linha_separadora" >
+
+		<ListView
+			android:id="@+id/listview_ver_produtos"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:layout_margin="10dp"
+			android:divider="@android:color/transparent"
+			android:dividerHeight="2dp" />
+	</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:background="#F7F8D8" >
+
+	<LinearLayout
+		android:id="@+id/layout_linha_descricao_produto"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingTop="6dp"
+		android:paddingBottom="6dp"
+		android:paddingLeft="6dp"
+		android:paddingRight="2dp" >
+
+		<TextView
+			android:id="@+id/textview_nome_produto"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.7"
+			android:layout_gravity="center_vertical"
+			android:layout_marginRight="6dp"
+			android:singleLine="true"
+			android:ellipsize="end"
+			android:textSize="14sp"
+			android:textStyle="bold"
+			android:textColor="#a0000000"
+			android:text="@string/act_cadastrar_produto_dialog_ninguem_vinculado_mensagem" />
+
+		<TextView
+			android:id="@+id/textview_preco_produto"
+			android:layout_width="100dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:textSize="12sp"
+			android:textStyle="bold"
+			android:textColor="#a0000000"
+			android:text="R$ 10,00" />
+	</LinearLayout>
+
+	<!-- linha separadora horizontal -->
+
+	<View
+		android:id="@+id/view_linha_separadora_2"
+		android:layout_width="fill_parent"
+		android:layout_height="1dp"
+		android:layout_below="@+id/layout_linha_descricao_produto"
+		android:background="#CAAF6F" />
+
+</RelativeLayout>

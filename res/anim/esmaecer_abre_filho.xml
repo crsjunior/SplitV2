@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+	android:interpolator="@android:anim/linear_interpolator" >
+
+	<!-- desliza da direita para o display -->
+	<!-- <translate -->
+	<!-- android:duration="600" -->
+	<!-- android:fromXDelta="100%" -->
+	<!-- android:toXDelta="0%" /> -->
+
+	<translate
+		android:duration="@integer/tempo_esmaecer"
+		android:fromXDelta="100%"
+		android:toXDelta="0%" />
+
+</set>

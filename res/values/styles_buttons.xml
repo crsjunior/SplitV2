@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!-- botao grande usado na activity_evento -->
+	<style name="button_grande">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">100dp</item>
+		<item name="android:layout_weight">0.5</item>
+		<item name="android:layout_marginBottom">2dp</item>
+		<item name="android:background">@drawable/button_grande</item>
+		<item name="android:drawablePadding">-10dp</item>
+		<item name="android:paddingTop">20dp</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+		<item name="android:textColor">#A0000000</item>
+	</style>
+
+	<!-- botao grande da esquerda usado na activity_evento -->
+	<style name="button_grande_esquerda" parent="@style/button_grande">
+		<item name="android:layout_marginRight">2dp</item>
+	</style>
+
+	<!-- botao grande da direita usado na activity_evento -->
+	<style name="button_grande_direita" parent="@style/button_grande">
+		<item name="android:layout_marginLeft">2dp</item>
+	</style>
+
+</resources>

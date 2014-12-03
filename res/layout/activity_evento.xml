@@ -1,0 +1,227 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/shape_activity_evento_background"
+	tools:context="br.com.split.activities.EventoActivity" >
+
+	<include
+		android:id="@+id/layout_titulo"
+		layout="@layout/layout_cabecalho_split" />
+
+	<!-- scroll view para telas que nao comportam todo o conteudo -->
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/layout_titulo" >
+
+		<!-- layout do conteudo -->
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp" >
+
+			<!-- nome do evento -->
+
+			<LinearLayout
+				android:id="@+id/layout_evento"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="20dp"
+				android:gravity="center"
+				android:orientation="horizontal" >
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="end"
+					android:text="@string/act_evento_label_nome_evento"
+					android:textSize="17sp" />
+
+				<TextView
+					android:id="@+id/textview_nome_evento"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="5dp"
+					android:singleLine="true"
+					android:ellipsize="end"
+					android:textSize="17sp"
+					android:textStyle="bold" />
+			</LinearLayout>
+
+			<!-- botoes principais - linha 1 -->
+
+			<LinearLayout
+				android:id="@+id/layout_buttons_a"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_below="@+id/layout_evento" >
+
+				<!-- botao cadastro pessoa -->
+
+				<LinearLayout
+					android:id="@+id/button_cadastro_pessoa"
+					style="@style/button_quadrado_esquerda"
+					android:onClick="onClick" >
+
+					<ImageView
+						android:id="@+id/button_cadastro_pessoa_imageview"
+						style="@style/button_quadrado_imageview"
+						android:src="@drawable/add_friends_2" />
+
+					<TextView
+						style="@style/button_quadrado_textview"
+						android:text="@string/act_evento_button_cadastro_pessoa" />
+				</LinearLayout>
+
+				<!-- botao cadastro produto -->
+
+				<LinearLayout
+					android:id="@+id/button_cadastro_produto"
+					style="@style/button_quadrado_direita"
+					android:onClick="onClick" >
+
+					<ImageView
+						android:id="@+id/button_cadastro_produto_imageview"
+						style="@style/button_quadrado_imageview"
+						android:src="@drawable/add_food_2" />
+
+					<TextView
+						style="@style/button_quadrado_textview"
+						android:text="@string/act_evento_button_cadastro_produto" />
+				</LinearLayout>
+			</LinearLayout>
+
+			<!-- botoes principais - linha 2 -->
+
+			<LinearLayout
+				android:id="@+id/layout_buttons_b"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_below="@+id/layout_buttons_a" >
+
+				<!-- botao exibir pessoas -->
+
+				<LinearLayout
+					android:id="@+id/button_exibir_pessoas"
+					style="@style/button_quadrado_esquerda"
+					android:onClick="onClick" >
+
+					<ImageView
+						android:id="@+id/button_exibir_pessoas_imageview"
+						style="@style/button_quadrado_imageview"
+						android:src="@drawable/add_friends_2" />
+
+					<TextView
+						style="@style/button_quadrado_textview"
+						android:text="@string/act_evento_button_exibir_pessoas" />
+				</LinearLayout>
+
+				<!-- botao exibir produtos -->
+
+				<LinearLayout
+					android:id="@+id/button_exibir_produtos"
+					style="@style/button_quadrado_direita"
+					android:onClick="onClick" >
+
+					<ImageView
+						android:id="@+id/button_exibir_produtos_imageview"
+						style="@style/button_quadrado_imageview"
+						android:src="@drawable/add_food_2" />
+
+					<TextView
+						style="@style/button_quadrado_textview"
+						android:text="@string/act_evento_button_exibir_produtos" />
+				</LinearLayout>
+			</LinearLayout>
+
+			<!-- informacao de quantidade de pessoas -->
+
+			<LinearLayout
+				android:id="@+id/layout_qtd_pessoas"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/layout_buttons_b"
+				android:layout_marginTop="6dp"
+				android:orientation="horizontal" >
+
+				<TextView
+					android:layout_width="140dp"
+					android:layout_height="wrap_content"
+					android:gravity="end"
+					android:text="@string/act_evento_label_qtd_pessoas" />
+
+				<TextView
+					android:id="@+id/textview_qtd_pessoas"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="5dp" />
+			</LinearLayout>
+
+			<!-- informacao de quantidade de produtos -->
+
+			<LinearLayout
+				android:id="@+id/layout_qtd_produtos"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/layout_qtd_pessoas"
+				android:layout_marginTop="6dp"
+				android:orientation="horizontal" >
+
+				<TextView
+					android:layout_width="140dp"
+					android:layout_height="wrap_content"
+					android:gravity="end"
+					android:text="@string/act_evento_label_qtd_produtos" />
+
+				<TextView
+					android:id="@+id/textview_qtd_produtos"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="5dp" />
+			</LinearLayout>
+
+			<!-- informacao de valor parcial -->
+
+			<LinearLayout
+				android:id="@+id/layout_valor_parcial"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/layout_qtd_produtos"
+				android:layout_marginTop="6dp"
+				android:orientation="horizontal" >
+
+				<TextView
+					android:layout_width="140dp"
+					android:layout_height="wrap_content"
+					android:gravity="end"
+					android:text="@string/act_evento_label_total_parcial" />
+
+				<TextView
+					android:id="@+id/textview_total_parcial"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="5dp" />
+			</LinearLayout>
+
+			<!-- botao ver conta -->
+
+			<Button
+				android:id="@+id/button_ver_conta"
+				android:layout_width="match_parent"
+				android:layout_height="80dp"
+				android:background="@drawable/button_normal_amarelo"
+				android:layout_below="@+id/layout_valor_parcial"
+				android:layout_marginTop="30dp"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:textColor="#a0000000"
+				android:onClick="onClick"
+				android:text="@string/act_evento_button_ver_conta" />
+		</RelativeLayout>
+	</ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!-- tema a ser aplicado ao aplicativo ou a uma activity -->
+	<style name="SplitActionBarTheme" parent="@style/AppTheme">
+		<item name="android:actionBarStyle">@style/SplitActionBar</item>
+		<item name="android:actionBarTabTextStyle">@style/SplitActionBarTabText</item>
+		<item name="android:actionMenuTextColor">#fce744</item>
+	</style>
+
+	<!-- estilo da action bar -->
+	<style name="SplitActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+		<item name="android:background">#0e58ad</item>
+		<item name="android:titleTextStyle">@style/SplitActionBarTitleText</item>
+	</style>
+
+	<!-- estilo do texto do titulo da action bar -->
+	<style name="SplitActionBarTitleText" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+		<item name="android:textColor">#4de6fa</item>
+	</style>
+
+	<!-- estilo do texto das tabs da action bar -->
+	<style name="SplitActionBarTabText" parent="@android:style/Widget.Holo.ActionBar.TabText">
+		<item name="android:textColor">#fce744</item>
+	</style>
+
+</resources>

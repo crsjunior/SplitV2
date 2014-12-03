@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<integer name="ordenacao_ver_conta_id_nome">0</integer>
+	<integer name="ordenacao_ver_conta_id_qtd_produtos">1</integer>
+	<integer name="ordenacao_ver_conta_id_valor_conta">2</integer>
+
+	<string-array name="ordenacao_ver_conta">
+		<item>Nome da pessoa</item>
+		<item>Quantidade de produtos</item>
+		<item>Valor da conta</item>
+	</string-array>
+
+</resources>

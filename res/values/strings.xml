@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">$plit</string>
+	<string name="title_activity_main">$plit</string>
+	<string name="title_activity_criar_novo_evento">Criar Novo Evento</string>
+	<string name="title_activity_evento">Central do Evento</string>
+	<string name="title_activity_cadastrar_pessoa">Cadastro de pessoa</string>
+	<string name="title_activity_cadastrar_produto">Cadastro de produto</string>
+	<string name="title_activity_vindular_produto_pessoas">Cadastro de produto</string>
+	<string name="title_activity_ver_conta">Resumo da conta</string>
+	<string name="title_activity_ver_conta_pessoa">Resumo da conta por pessoa</string>
+	<string name="title_activity_ver_conta_pessoa_produto">Resumo da conta por pessoa</string>
+	<string name="title_activity_ver_pessoas">Pessoas participando</string>
+	<string name="title_activity_ver_produtos">Produtos consumidos</string>
+	<string name="action_settings">Cancelar evento</string>
+
+	<!-- de uso global -->
+	<string name="nome_app">$plit</string>
+
+	<!-- activity_inicializar -->
+	<string name="act_inicializar_button_novo_evento">Novo evento</string>
+	<string name="act_inicializar_button_conta_simples">Divisão simples</string>
+	<!-- activity_conta_simples -->
+	<string name="act_conta_simples_textview_valor_conta">Valor total:</string>
+	<string name="act_conta_simples_textview_numero_pessoas">Número de pessoas:</string>
+	<string name="act_conta_simples_checkbox_com_taxa_servico">Adicionar taxa de serviço 10%</string>
+	<string name="act_conta_simples_button_calcular">Calcular</string>
+	<string name="act_conta_simples_textview_total_pagar">Total a pagar por pessoa</string>
+
+	<!-- activity_criar_novo_evento -->
+	<string name="act_criar_novo_evento_textview_crie_evento">Crie um novo evento</string>
+	<string name="act_criar_novo_evento_edittext_nome_evento_hint">Nome do evento</string>
+	<string name="act_criar_novo_evento_button_criar_evento">Avançar</string>
+	<string name="act_criar_novo_evento_button_criar_evento_facebook">Adicionar local do Facebook</string>
+
+	<!-- activity_evento -->
+	<string name="act_evento_label_nome_evento">Evento:</string>
+	<string name="act_evento_button_cadastro_pessoa">Adicionar pessoa</string>
+	<string name="act_evento_button_cadastro_produto">Adicionar produto</string>
+	<string name="act_evento_button_exibir_pessoas">Exibir pessoas</string>
+	<string name="act_evento_button_exibir_produtos">Exibir produtos</string>
+	<string name="act_evento_label_qtd_pessoas">Total de pessoas:</string>
+	<string name="act_evento_label_qtd_produtos">Total de produtos:</string>
+	<string name="act_evento_label_total_parcial">Valor parcial:</string>
+	<string name="act_evento_button_ver_conta">Ver conta</string>
+
+	<!-- activity_cadastrar_pessoa -->
+	<string name="act_cadastrar_pessoa_linha_descricao">Adicione uma ou mais pessoas</string>
+	<string name="act_cadastrar_pessoa_edittext_nome_pessoa_hint">Nome da pessoa</string>
+	<string name="act_cadastrar_pessoa_button_adicionar_pessoa_facebook">Adicionar do Facebook</string>
+	<string name="act_cadastrar_pessoa_button_enviar_cadastro">Adicionar</string>
+	<string name="act_cadastrar_pessoa_preenchimento_nome_pessoa">Informe o nome da pessoa.</string>
+	<string name="act_cadastrar_pessoa_cadastrado_com_sucesso">Pessoa adicionada.</string>
+	<string name="act_cadastrar_pessoa_cadastrado_com_sucesso_facebook">Amigos adicionados.</string>
+
+	<!-- facebook_escolher_amigos -->
+	<string name="facebook_escolher_amigos_done_button">Feito!</string>
+
+	<!-- fragment_facebook_selection -->
+	<string name="fragment_facebook_selection_button_concluir_escolha">Concluído!</string>
+
+	<!-- fragment_facebook_splash -->
+	<string name="fragment_facebook_splash_textview_profile_name">Faça login para começar!</string>
+
+	<!-- facebook_friend_picker_activity -->
+	<string name="need_perms_alert_text">Para poder escolher os amigos você precisa aceitar as permissões da próxima página.</string>
+	<string name="need_perms_alert_button_ok">OK</string>
+	<string name="need_perms_alert_button_quit">Sair</string>
+
+	<!-- activity_cadastrar_produto -->
+	<string name="act_cadastrar_produto_linha_descricao">Adicione um novo produto</string>
+	<string name="act_cadastrar_produto_edittext_nome_produto_hint">Nome do produto</string>
+	<string name="act_cadastrar_produto_edittext_preco_produto_hint">Preço do produto</string>
+	<string name="act_cadastrar_produto_button_quantidade_produto">Quantidade:</string>
+	<string name="act_cadastrar_produto_button_um_produto_para_cada_pessoa">Um pra cada:</string>
+	<string name="act_cadastrar_produto_button_um_produto_para_cada_pessoa_sim">Sim</string>
+	<string name="act_cadastrar_produto_button_um_produto_para_cada_pessoa_nao">Não</string>
+	<string name="act_cadastrar_produto_button_vincular_pessoas">Vincular pessoas</string>
+	<string name="act_cadastrar_produto_label_qtd_pessoas_vinculadas">Pessoas vinculadas:</string>
+	<string name="act_cadastrar_produto_button_enviar_cadastro">Adicionar</string>
+	<string name="act_cadastrar_produto_preenchimento_nome_produto">Informe o nome do produto.</string>
+	<string name="act_cadastrar_produto_preenchimento_preco_produto">Informe o preço do produto.</string>
+	<string name="act_cadastrar_produto_cadastrado_com_sucesso">Produto adicionado.</string>
+	<string name="act_cadastrar_produto_dialog_ninguem_vinculado_titulo">Pessoas vinculadas...</string>
+	<string name="act_cadastrar_produto_dialog_ninguem_vinculado_mensagem">   Você não vinculou nenhuma pessoa ao produto.\n\n   Deseja vincular todas?</string>
+	<string name="act_cadastrar_produto_dialog_ninguem_vinculado_botao_positivo">Escolher</string>
+	<string name="act_cadastrar_produto_dialog_ninguem_vinculado_botao_negativo">Todas</string>
+
+	<!-- activity_vincular_produto_pessoas -->
+	<string name="act_vincular_produto_pessoas_button_selecionar_todos">Selecionar todos</string>
+	<string name="act_vincular_produto_pessoas_button_deselecionar_todos">Deselecionar todos</string>
+	<string name="act_vincular_produto_pessoas_button_concluido">Finalizar e voltar</string>
+
+	<!-- activity_ver_conta -->
+	<string name="act_ver_conta_label_spinner_ordenacao">Ordenar por:</string>
+	<string name="act_ver_conta_button_voltar">Voltar</string>
+	<string name="act_ver_conta_button_encerrar">Encerrar conta</string>
+
+	<!-- listview_ver_conta -->
+	<string name="listview_ver_conta_label_qtd_produtos_vinculados">Produtos consumidos:</string>
+	<string name="listview_ver_conta_label_total_conta">Total a pagar:</string>
+
+	<!-- listview_ver_conta_pessoa -->
+	<string name="listview_ver_conta_pessoa_label_qtd_pessoas_vinculadas">Pessoas que consumiram:</string>
+	<string name="listview_ver_conta_pessoa_label_preco_produto_por_pessoa">Valor por pessoa:</string>
+
+	<!-- listview_ver_produtos -->
+	<string name="listview_ver_produtos_label_qtd_consumida_produto">Quantidade consumida:</string>
+	<string name="listview_ver_produtos_label_valor_total_produto">Total do produto:</string>
+
+	<!-- layout_cabecalho_split -->
+	<string name="layout_cabecalho_split_titulo_s">$</string>
+	<string name="layout_cabecalho_split_titulo_plit">plit</string>
+
+	<!-- de uso do NavigationDrawer -->
+	<string-array name="drawer_items">
+		<item>Início</item>
+		<item>Histórico</item>
+		<item>Ajuda</item>
+		<item>Sobre</item>
+	</string-array>
+	<string-array name="drawer_titles">
+		<item>$plit</item>
+		<item>Histórico</item>
+		<item>Ajuda</item>
+		<item>Sobre</item>
+	</string-array>
+
+	<string name="drawer_open">Open drawer</string>
+	<string name="drawer_close">Close drawer</string>
+	<string name="drawer_title">$plit - Menu</string>
+
+	<!-- fragment_main -->
+	<string name="textview_bem_vindo">Bem-Vindo ao $plit</string>
+	<string name="button_criar_evento">INICIAR UM NOVO EVENTO</string>
+
+	<!-- fragment_historico -->
+	<string name="texto_historico">
+<![CDATA[
+		<html><head>
+			<style type=\"text/css\">
+				html, body { background-color: transparent; }
+				div { font-size: large; text-align: center; color: red; }
+			</style>
+		</head><body>
+		<div>Histórico do usuário do $plit</div>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;Funcionalidade <strong>em desenvolvimento</strong>.</p>
+		</body></html>
+]]>
+	</string>
+	<!-- fragment_ajuda -->
+	<string name="texto_ajuda">
+<![CDATA[
+		<html><head>
+			<style type=\"text/css\">
+				html, body { background-color: transparent; }
+				div { font-size: large; text-align: center; color: red; }
+			</style>
+		</head><body>
+		<div>Ajuda do $plit</div>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;Funcionalidade <strong>em desenvolvimento</strong>.</p>
+		</body></html>
+]]>
+	</string>
+
+	<!-- fragment_sobre -->
+	<string name="texto_sobre">
+<![CDATA[
+		<html><head>
+			<style type=\"text/css\">
+				html, body { background-color: transparent; }
+				div { font-size: large; text-align: center; color: red; }
+			</style>
+		</head><body>
+		<div>Sobre o $plit</div>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;<i>$plit</i> é um aplicativo para gerenciar a divisão de uma conta com os amigos.
+		<br><br>&nbsp;&nbsp;&nbsp;&nbsp;Conteúdo <strong>em construção</strong>.</p>
+		</body></html>
+]]>
+	</string>
+
+	<!-- action labels para o action button do teclado -->
+	<string name="button_cirar_evento_action_label">Criar</string>
+
+	<!-- OUTRAS STRING UTILIZADAS DENTRO DO CODIGO -->
+	<string name="vincluar_produto_pessoas_dialog_titulo">Você fez alterações...</string>
+	<string name="vincluar_produto_pessoas_dialog_mensagem">Confirme o que deseja fazer?</string>
+	<string name="vincluar_produto_pessoas_dialog_botao_positivo">Salvar</string>
+	<string name="vincluar_produto_pessoas_dialog_botao_negativo">Descartar</string>
+
+	<!-- Strings do Facebook / titulo formatado by @Daniel -->
+	<!-- Titulos Activities -->
+	<string name="title_activity_fechar_conta">Fechar conta</string>
+	<string name="title_activity_splash">$plit!</string>
+	<string name="splash_subtext">Because split is easy!</string>
+	<string name="app_id">292885597580483</string>
+	<string name="formatted_splash_text">
+<![CDATA[ <font color="green">$</font><font color="white">plit</font>
+        ]]>
+	</string>
+	<string name="title_activity_tipo_entrada">Tipo de entrada</string>
+	<string name="title_activity_facebook_login">Carregar amigos do facebook</string>
+	<string name="title_activity_facebook_splash_fragment">Login com o Facebook</string>
+	<string name="acao_pessoas">Com quem?</string>
+	<string name="acao_pessoas_padrao">Selecione os amigos</string>
+	<string name="erro_dialogo_titulo">Erro</string>
+	<string name="erro_dialogo_texto_botao">OK</string>
+	<string name="title_activity_facebook_amigos">Escolha os amigos</string>
+	<string name="um_usuario_selecionado">Apenas %1$s</string>
+	<string name="dois_usuarios_selecionados">%1$s e %2$s</string>
+	<string name="varios_usuarios_selecionados">%1$s e %2$s outros</string>
+	<string name="acao_localizacao">Onde você está?</string>
+	<string name="acao_localizacao_padrao">Selecione um lugar</string>
+	<string name="erro_sem_localizacao">Não foi possivel obter sua localização</string>
+	<string name="mensagem_login">Faça login para começar!</string>
+	<string name="acao_feito">Feito!</string>
+	<string name="tela_amigos_titulo">Escolha os amigos</string>
+	<string name="localizacao_titulo">Perto de você</string>
+	<string name="title_activity_conta_simples">Dividir a conta</string>
+
+	<!-- Fim string by @Daniel -->
+
+	<string name="title_activity_recadastrar_produto">RecadastrarProdutoActivity</string>
+	<string name="hello_world">Hello world!</string>
+	<string name="title_activity_ver_produtos2">VerProdutos2Activity</string>
+
+</resources>

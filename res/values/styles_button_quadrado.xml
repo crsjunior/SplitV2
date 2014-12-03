@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!-- Estilo de um botao quadrado, que ocupa 100dp de altura e 50% da largura disponivel na tela -->
+
+
+	<!-- botao -->
+	<style name="button_quadrado">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">100dp</item>
+		<item name="android:layout_weight">0.5</item>
+		<item name="android:orientation">vertical</item>
+		<item name="android:layout_marginBottom">2dp</item>
+		<item name="android:background">@drawable/button_quadrado</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:gravity">center</item>
+	</style>
+
+	<!-- botao da esquerda -->
+	<style name="button_quadrado_esquerda" parent="@style/button_quadrado">
+		<item name="android:layout_marginRight">2dp</item>
+	</style>
+
+	<!-- botao da direita -->
+	<style name="button_quadrado_direita" parent="@style/button_quadrado">
+		<item name="android:layout_marginLeft">2dp</item>
+	</style>
+
+	<!-- icone para o botao -->
+	<style name="button_quadrado_imageview">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:adjustViewBounds">true</item>
+		<item name="android:scaleType">fitCenter</item>
+		<item name="android:layout_marginBottom">6dp</item>
+	</style>
+
+	<!-- texto para o botao -->
+	<style name="button_quadrado_textview">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+		<item name="android:textColor">#A0000000</item>
+	</style>
+
+</resources>

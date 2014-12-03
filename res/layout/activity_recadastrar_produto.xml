@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="br.com.split.RecadastrarProdutoActivity" >
+
+	<include
+		android:id="@+id/layout_titulo"
+		layout="@layout/layout_cabecalho_split" />
+
+	<include
+		android:id="@+id/layout_linha_descricao"
+		layout="@layout/layout_linha_descricao"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="-5dp"
+		android:layout_below="@+id/layout_titulo" />
+
+	<include
+		android:id="@+id/layout_info_produto"
+		layout="@layout/layout_vincular_produto_pessoas_info_produto"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/layout_linha_descricao" />
+
+	<!-- botao concluido (finaliza a vinculacao de pessoas ao produto) -->
+
+	<Button
+		android:id="@+id/button_vincular_produto_pessoas_concluido"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/layout_info_produto"
+		android:layout_margin="10dp"
+		android:background="@drawable/button_normal_amarelo"
+		android:textColor="#a0000000"
+		android:onClick="onButtonClick"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:text="@string/act_vincular_produto_pessoas_button_concluido" />
+
+	<!-- layout do conteudo -->
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:layout_below="@+id/button_vincular_produto_pessoas_concluido" >
+
+		<!-- lista de pessoas que podem ser vinculadas ao produto -->
+
+		<ListView
+			android:id="@+id/listview_vincular_produto_pessoas"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:divider="@android:color/transparent"
+			android:dividerHeight="3dp" />
+
+		<!-- botoes inferiores -->
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:padding="5dp" >
+
+			<Button
+				android:id="@+id/button_vincular_produto_pessoas_selecionar_todos"
+				android:layout_width="0dp"
+				android:layout_height="30dp"
+				android:layout_weight="0.5"
+				android:layout_marginRight="2dp"
+				android:background="@drawable/button_normal_verde"
+				android:onClick="onButtonClick"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:textSize="12sp"
+				android:text="@string/act_vincular_produto_pessoas_button_selecionar_todos" />
+
+			<Button
+				android:id="@+id/button_vincular_produto_pessoas_deselecionar_todos"
+				android:layout_width="0dp"
+				android:layout_height="30dp"
+				android:layout_weight="0.5"
+				android:layout_marginLeft="2dp"
+				android:background="@drawable/button_normal_verde"
+				android:onClick="onButtonClick"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:textSize="12sp"
+				android:text="@string/act_vincular_produto_pessoas_button_deselecionar_todos" />
+		</LinearLayout>
+	</LinearLayout>
+
+</RelativeLayout>

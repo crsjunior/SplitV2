@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical" >
+
+	<!-- nome e preco do produto -->
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginLeft="5dp" >
+
+		<TextView
+			android:id="@+id/textview_nome_produto"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.7"
+			android:layout_gravity="center_vertical"
+			android:textSize="18sp"
+			android:textStyle="bold"
+			android:textColor="#a0000000"
+			android:singleLine="true"
+			android:ellipsize="end" />
+
+		<TextView
+			android:id="@+id/textview_preco_produto"
+			android:layout_width="100dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:textSize="12sp"
+			android:textStyle="bold"
+			android:textColor="#a0000000" />
+	</LinearLayout>
+
+	<!-- quantidade consumida deste produto -->
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginLeft="20dp" >
+
+		<TextView
+			android:layout_width="160dp"
+			android:layout_height="wrap_content"
+			android:gravity="end"
+			android:textSize="12sp"
+			android:textColor="#a0000000"
+			android:text="@string/listview_ver_produtos_label_qtd_consumida_produto" />
+
+		<TextView
+			android:id="@+id/textview_qtd_consumida_produto"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:textSize="12sp"
+			android:textStyle="bold"
+			android:textColor="#a0000000" />
+	</LinearLayout>
+
+	<!-- valor total gasto com este produto -->
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginLeft="20dp" >
+
+		<TextView
+			android:layout_width="160dp"
+			android:layout_height="wrap_content"
+			android:gravity="end"
+			android:textSize="12sp"
+			android:textColor="#a0000000"
+			android:text="@string/listview_ver_produtos_label_valor_total_produto" />
+
+		<TextView
+			android:id="@+id/textview_valor_total_produto"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:textSize="12sp"
+			android:textStyle="bold"
+			android:textColor="#a0000000" />
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- tempo das animacoes -->
+	<integer name="tempo_deslizar">300</integer>
+	<integer name="tempo_rotacao">450</integer>
+	<integer name="tempo_esmaecer">300</integer>
+
+	<item name="textview_vincular_produto_pessoas_shadowRadius" format="float" type="fraction">20.0</item>
+	<item name="textview_vincular_produto_pessoas_shadowDx" format="float" type="fraction">6.0</item>
+	<item name="textview_vincular_produto_pessoas_shadowDy" format="float" type="fraction">6.0</item>
+
+</resources>

@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:paddingTop="@dimen/activity_vertical_margin"
+	android:background="@android:color/black"
+	tools:context="br.com.split.activities.ContaSimplesActivity" >
+
+	<TextView
+		android:id="@+id/label_valor_total"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:text="@string/act_conta_simples_textview_valor_conta"
+		android:textColor="@android:color/white"
+		android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<EditText
+		android:id="@+id/edit_valor_total"
+		android:paddingTop="30sp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignTop="@+id/label_valor_total"
+		android:ems="10"
+		android:textColor="@android:color/white"
+		android:inputType="number" >
+
+		<requestFocus />
+	</EditText>
+
+	<TextView
+		android:id="@+id/label_numero_pessoas"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/edit_valor_total"
+		android:layout_marginTop="14dp"
+		android:inputType="numberSigned"
+		android:textColor="@android:color/white"
+		android:text="@string/act_conta_simples_textview_numero_pessoas"
+		android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<EditText
+		android:id="@+id/edit_numero_pessoas"
+		android:layout_width="wrap_content"
+		android:ems="10"
+		android:paddingTop="10sp"
+		android:textColor="@android:color/white"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/label_numero_pessoas"
+		android:inputType="numberDecimal" />
+
+	<CheckBox
+		android:id="@+id/checkBox_com_txa_servico"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:checked="true"
+		android:layout_below="@+id/edit_numero_pessoas"
+		android:text="@string/act_conta_simples_checkbox_com_taxa_servico"
+		android:textColor="@android:color/white" />
+
+	<Button
+		android:id="@+id/button_calcular"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/checkBox_com_txa_servico"
+		android:onClick="calcular"
+		android:textColor="@android:color/white"
+		android:padding="10sp"
+		android:text="@string/act_conta_simples_button_calcular" />
+
+	<TextView
+		android:id="@+id/label_total_pagar"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/button_calcular"
+		android:text="@string/act_conta_simples_textview_total_pagar"
+		android:paddingTop="40sp"
+		android:paddingBottom="10sp"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:textColor="@android:color/white" />
+
+	<TextView
+		android:id="@+id/label_resultado_pagar"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/label_total_pagar"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:textColor="@android:color/white" />
+
+</RelativeLayout>

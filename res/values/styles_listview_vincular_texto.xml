@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<style name="listview_vincular_texto">
+		<item name="android:shadowRadius">20.0</item>
+		<item name="android:shadowDx">6.0</item>
+		<item name="android:shadowDy">6.0</item>
+	</style>
+
+	<style name="listview_vincular_texto_normal" parent="@style/listview_vincular_texto">
+		<item name="android:shadowColor">@color/nevada_opal_30_hot_red_escuro</item>
+	</style>
+
+	<style name="listview_vincular_texto_selected" parent="@style/listview_vincular_texto">
+		<item name="android:shadowColor">@color/nevada_opal_30_mad_hatter_escuro</item>
+	</style>
+
+</resources>

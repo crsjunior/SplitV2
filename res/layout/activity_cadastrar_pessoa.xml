@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="br.com.split.activities.CadastrarPessoaActivity" >
+
+	<include
+		android:id="@+id/layout_titulo"
+		layout="@layout/layout_cabecalho_split" />
+
+	<include
+		android:id="@+id/layout_linha_descricao"
+		layout="@layout/layout_linha_descricao"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="-5dp"
+		android:layout_below="@+id/layout_titulo" />
+
+	<!-- scroll view para telas que nao comportam todo o conteudo -->
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/layout_linha_descricao" >
+
+		<!-- layout do conteudo -->
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp" >
+
+			<!-- botao adicionar pessoa do facebook -->
+
+			<Button
+				android:id="@+id/button_adicionar_pessoa_facebook"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/button_normal_facebook"
+				android:layout_marginTop="10dp"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:textColor="#C0FFFFFF"
+				android:onClick="onButtonClick"
+				android:text="@string/act_cadastrar_pessoa_button_adicionar_pessoa_facebook" />
+
+			<!-- campo nome da pessoa -->
+
+			<EditText
+				android:id="@+id/edittext_nome_pessoa"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/button_adicionar_pessoa_facebook"
+				android:layout_marginTop="20dp"
+				android:textColor="@drawable/selector_edittext"
+				android:hint="@string/act_cadastrar_pessoa_edittext_nome_pessoa_hint"
+				android:inputType="textCapWords" />
+
+			<!-- botao enviar cadastro da pessoa -->
+
+			<Button
+				android:id="@+id/button_enviar_cadastro_pessoa"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/button_normal_amarelo"
+				android:layout_below="@+id/edittext_nome_pessoa"
+				android:layout_marginTop="40dp"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:textColor="#a0000000"
+				android:onClick="onButtonClick"
+				android:text="@string/act_cadastrar_pessoa_button_enviar_cadastro" />
+		</RelativeLayout>
+	</ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal" >
+
+	<!-- layout contendo as informacoes da conta de uma pessoa -->
+
+	<LinearLayout
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:orientation="vertical" >
+
+		<!-- nome e preco do produto -->
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginLeft="5dp" >
+
+			<TextView
+				android:id="@+id/textview_nome_produto"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="0.7"
+				android:layout_gravity="center_vertical"
+				android:textSize="18sp"
+				android:textStyle="bold"
+				android:textColor="#a0000000"
+				android:singleLine="true"
+				android:ellipsize="end" />
+
+			<TextView
+				android:id="@+id/textview_preco_produto"
+				android:layout_width="100dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:textSize="12sp"
+				android:textStyle="bold"
+				android:textColor="#a0000000" />
+		</LinearLayout>
+
+		<!-- quantidade de pessoas vinculadas ao produto -->
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginLeft="20dp" >
+
+			<TextView
+				android:layout_width="160dp"
+				android:layout_height="wrap_content"
+				android:gravity="end"
+				android:textSize="12sp"
+				android:textColor="#a0000000"
+				android:text="@string/listview_ver_conta_pessoa_label_qtd_pessoas_vinculadas" />
+
+			<TextView
+				android:id="@+id/textview_qtd_pessoas_vinculadas"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10dp"
+				android:textSize="12sp"
+				android:textStyle="bold"
+				android:textColor="#a0000000" />
+		</LinearLayout>
+
+		<!-- valor do produto para cada pessoa -->
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginLeft="20dp" >
+
+			<TextView
+				android:layout_width="160dp"
+				android:layout_height="wrap_content"
+				android:gravity="end"
+				android:textSize="12sp"
+				android:textColor="#a0000000"
+				android:text="@string/listview_ver_conta_pessoa_label_preco_produto_por_pessoa" />
+
+			<TextView
+				android:id="@+id/textview_preco_por_pessoa"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10dp"
+				android:textSize="12sp"
+				android:textStyle="bold"
+				android:textColor="#a0000000" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<!-- seta para a direita -->
+
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_marginRight="5dp"
+		android:src="@drawable/seta_direita_4" />
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!-- Estilo de um bota que se estende horizontalmente, ocupando metade da largura disponivel na tela -->
+
+
+	<!-- botao -->
+	<style name="button_horizontal_duplo">
+		<item name="android:orientation">horizontal</item>
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">40dp</item>
+		<item name="android:layout_weight">0.5</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:gravity">center</item>
+	</style>
+
+	<!-- botao da equerda -->
+	<style name="button_horizontal_duplo_esquerda" parent="@style/button_horizontal_duplo">
+		<item name="android:layout_marginRight">5dp</item>
+	</style>
+
+	<!-- botao da direita -->
+	<style name="button_horizontal_duplo_direita" parent="@style/button_horizontal_duplo">
+		<item name="android:layout_marginLeft">5dp</item>
+	</style>
+
+	<!-- texto para o botao -->
+	<style name="button_horizontal_duplo_textview">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">40dp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+		<item name="android:textColor">#A0000000</item>
+	</style>
+
+</resources>
